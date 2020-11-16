@@ -10,7 +10,7 @@
 
 ![wireframe5](css/Screen%20Shot%202020-11-16%20at%203.37.50%20PM.png)
 
-![wireframe2](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
+![wireframe6](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
 
 
 ## design layout
