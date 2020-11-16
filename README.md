@@ -4,6 +4,15 @@
 
 ![wireframe2](css/90F40AF5-D120-450A-B40B-F99403820800_1_105_c.jpeg)
 
+![wireframe3](css/Screen%20Shot%202020-11-16%20at%203.37.09%20PM.png)
+
+![wireframe4](css/Screen%20Shot%202020-11-16%20at%203.37.24%20PM.png)
+
+![wireframe5](css/Screen%20Shot%202020-11-16%20at%203.37.50%20PM.png)
+
+![wireframe2](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
+
+
 ## design layout
 
 ## make 3 buttons (genBtn, norrisBtn, lightDark)
