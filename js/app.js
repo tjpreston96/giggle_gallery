@@ -2,8 +2,11 @@ console.log(`sanity check`);
 
 /*-------------------------------- Constants --------------------------------*/
 
-
-
+const norrisBtn
+const genBtn
+const container
+const lightDarkBrn
+const body
 /*---------------------------- Variables (state) ----------------------------*/
 
 
