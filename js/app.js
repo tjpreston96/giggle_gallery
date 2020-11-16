@@ -16,11 +16,17 @@ const jokes
 const norrisBtn
 const genBtn
 const container
-const lightDarkBrn
+const lightDarkBtn
 const body
 
 
 /*----------------------------- Event Listeners -----------------------------*/
+norrisBtn
+
+genBtn
+
+lightDarkBtn
+
 
 // This is where you should put the event listener
 // for a mouse-click
