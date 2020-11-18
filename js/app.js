@@ -83,6 +83,14 @@ function appendDiv (joke, category, idx){
     container.appendChild(newDiv)
 }
 
+
+function render() {
+    container.innerHTML = ""
+    jokes.forEach((joke, idx) => {
+        appendDiv(joke["joke"], joke["category"], idx)
+    })
+}
+
 function appendDiv2 (category, setup, punchline, idx){
     let newDiv = document.createElement('div')
     newDiv.innerHTML = `
@@ -100,13 +108,12 @@ function appendDiv2 (category, setup, punchline, idx){
     container.appendChild(newDiv)
 }
 
-function render() {
+function render2() {
     container.innerHTML = ""
     jokes.forEach((joke, idx) => {
-      appendDiv(joke["joke"], joke["category"], idx)
+        appendDiv(joke["setup"],joke["punchline"], joke["category"], idx)
     })
 }
-
 function deleteJoke(idx) {
     jokes.splice(idx, 1)
     render()
