@@ -30,8 +30,8 @@ norrisBtn.addEventListener('click', () => {
     .then((data) => {
         let newJoke = {}
         newJoke['category'] = 'Norris'
-        newJoke['joke'] = data.joke
-        quotes.push(newJoke)
+        newJoke['joke'] = data.value
+        jokes.push(newJoke)
         render()
     })
     .catch((err) => {
@@ -47,8 +47,8 @@ genBtn.addEventListener('click', () => {
     .then((data) => {
         let newJoke = {}
         newJoke['category'] = 'general'
-        newJoke['joke'] = data.joke
-        quotes.push(newJoke)
+        newJoke['joke'] = data.
+        jokes.push(newJoke)
         render()
     })
     .catch((err) => {
@@ -65,3 +65,31 @@ lightDarkBtn.addEventListener('click', colorScheme.change)
 // for a mouse-click
 
 /*-------------------------------- Functions --------------------------------*/
+
+function appendDiv (joke, category, idx){
+    let newDiv = document.createElement('div')
+    newDiv.innerHTML = `
+                        <div class="card h-100" id="${category.toLowerCase()}">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <header class='blockquote-header'>${category}</header>
+                                    <p>${joke}</p>
+                                </blockquote>
+                            </div>
+                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>X</button>
+                        </div>    
+                        `
+    container.appendChild(newDiv)
+}
+
+function render() {
+    container.innerHTML = ""
+    jokes.forEach((joke, idx) => {
+      appendDiv(joke["joke"], joke["category"], idx)
+    })
+}
+
+function deleteJoke(idx) {
+    jokes.splice(idx, 1)
+    render()
+}
