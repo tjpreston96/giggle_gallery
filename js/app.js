@@ -10,22 +10,35 @@ const colorScheme = {
 }
 /*---------------------------- Variables (state) ----------------------------*/
 
-const jokes
+const jokes = []
 
 /*------------------------ Cached Element References ------------------------*/
-const norrisBtn
-const genBtn
-const container
-const lightDarkBtn
-const body
+const norrisBtn = document.getElementById('norrisBtn');
+const genBtn = document.getElementById('genBtn')
+const progBtn = document.getElementById('progBtn')
+const container = document.getElementById('containerDiv')
+const lightDarkBtn = document.getElementById('lightDarkButton')
+const body = document.getElementById('')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-norrisBtn
+norrisBtn.addEventListener('click', () => {
+    fetch('https://api.chucknorris.io/jokes/random')
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        let newJoke = {}
+        newJoke['category'] = 'Norris'
+        newJoke['joke'] = data.joke
+    })
+})
 
 genBtn
 
-lightDarkBtn
+progBtn
+
+lightDarkBtn.addEventListener('click', colorScheme.change)
 
 
 // This is where you should put the event listener
