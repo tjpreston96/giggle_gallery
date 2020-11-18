@@ -46,8 +46,9 @@ genBtn.addEventListener('click', () => {
     })
     .then((data) => {
         let newJoke = {}
-        newJoke['category'] = 'general'
-        newJoke['joke'] = data.
+        newJoke['category'] = data.type
+        newJoke['joke-p1'] = data.setup
+        newJoke['joke-p2'] = data.punchline
         jokes.push(newJoke)
         render()
     })
@@ -74,6 +75,23 @@ function appendDiv (joke, category, idx){
                                 <blockquote class="blockquote mb-0">
                                     <header class='blockquote-header'>${category}</header>
                                     <p>${joke}</p>
+                                </blockquote>
+                            </div>
+                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>X</button>
+                        </div>    
+                        `
+    container.appendChild(newDiv)
+}
+
+function appendDiv2 (category, setup, punchline, idx){
+    let newDiv = document.createElement('div')
+    newDiv.innerHTML = `
+                        <div class="card h-100" id="${category.toLowerCase()}">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <header class='blockquote-header'>${category}</header>
+                                    <p>${setup}</p>
+                                    <p>${punchline}</p>
                                 </blockquote>
                             </div>
                             <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>X</button>
