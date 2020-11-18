@@ -39,7 +39,22 @@ norrisBtn.addEventListener('click', () => {
     })
 })
 
-genBtn
+genBtn.addEventListener('click', () => {
+    fetch('https://official-joke-api.appspot.com/jokes/general/random')
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        let newJoke = {}
+        newJoke['category'] = 'general'
+        newJoke['joke'] = data.joke
+        quotes.push(newJoke)
+        render()
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
 
 progBtn
 
