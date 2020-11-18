@@ -31,6 +31,11 @@ norrisBtn.addEventListener('click', () => {
         let newJoke = {}
         newJoke['category'] = 'Norris'
         newJoke['joke'] = data.joke
+        quotes.push(newJoke)
+        render()
+    })
+    .catch((err) => {
+        console.log(err)
     })
 })
 
