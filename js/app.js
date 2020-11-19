@@ -131,7 +131,7 @@ function appendDiv2 (category, setup, punchline, idx){
                                     <p>${punchline}</p>
                                 </blockquote>
                             </div>
-                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>X</button>
+                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
                         `
     container.appendChild(newDiv)

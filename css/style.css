@@ -37,12 +37,14 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 #containerDiv > div {
     width: 250px;
     margin: 20px 10px 0 10px;
     justify-content: center;
     display: flex;
 }
+
 .card {
     text-align: left;
     align-items: center;
@@ -52,10 +54,18 @@ body{
     background-repeat: no-repeat;
     
 }
+
+#programming{
+    background: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
 .blockquote > p {
     font-size: 1.8rem;
     padding-left: 17px;
 }
+
 .blockquote-header {
     font-size: 1.4rem;
     text-align: right;
@@ -78,7 +88,7 @@ body{
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin: 2px;
+    margin: 3px;
 }
 
 .glow-on-hover:before {
@@ -126,4 +136,19 @@ body{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+h1{
+    text-align: center;
+    font-size: 5.5rem;
+    background: cornsilk;
+    width: 100%;
+}
+
+#programming{
+    background: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);
+}
+
+#general{
+    background: url(https://c7.uihere.com/files/103/226/345/free-vector-pink-abstract-sparkling-background.jpg);
 }
