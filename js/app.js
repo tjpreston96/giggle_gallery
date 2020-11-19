@@ -147,3 +147,4 @@ function deleteJoke(idx) {
     jokes.splice(idx, 1)
     render()
 }
+

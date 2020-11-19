@@ -18,6 +18,7 @@ font-size: 62.5%;
 body{
     background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
     width: 100%;
+    min-width: 255px;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -46,13 +47,13 @@ body{
 }
 
 .card {
-    text-align: left;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background: url(https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg);
     background-size: 100vh;
     background-repeat: no-repeat;
-    
+    border: black 2px solid;
 }
 
 #programming{
@@ -151,4 +152,17 @@ h1{
 
 #general{
     background: url(https://c7.uihere.com/files/103/226/345/free-vector-pink-abstract-sparkling-background.jpg);
+}
+
+@media screen and (max-width: 400px) {
+    .glow-on-hover{
+        display: block;
+        width: 70%;
+        align-self: center;
+        justify-content: center;
+    }
+    #buttonDiv{
+        align-items: center;
+        justify-content: center;
+    }
 }
