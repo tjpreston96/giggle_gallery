@@ -55,7 +55,12 @@ body{
     background-size: 100vh;
     background-repeat: no-repeat;
     border: black 2px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 #programming{
     background: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);

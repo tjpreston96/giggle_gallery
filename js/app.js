@@ -53,7 +53,7 @@ genBtn.addEventListener('click', () => {
         newJoke['joke-p1'] = data[0].setup
         newJoke['joke-p2'] = data[0].punchline
         jokes.push(newJoke)
-        render2()
+        render()
     })
     .catch((err) => {
         console.log(err)
@@ -72,7 +72,7 @@ progBtn.addEventListener('click', () => {
         newJoke['joke-p1'] = data[0].setup
         newJoke['joke-p2'] = data[0].punchline
         jokes.push(newJoke)
-        render2()
+        render()
     })
     .catch((err) => {
         console.log(err)
@@ -90,9 +90,9 @@ function appendDiv (joke, category, idx){
                                 <blockquote class="blockquote mb-0">
                                     <header class='blockquote-header'>${category}</header>
                                     <p>${joke}</p>
-                                </blockquote>
-                            </div>
-                            <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
+                                    </blockquote>
+                                    </div>
+                                    <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
                         `
     container.appendChild(newDiv)
@@ -102,8 +102,16 @@ function appendDiv (joke, category, idx){
 function render() {
     container.innerHTML = ""
     jokes.forEach((joke, idx) => {
-        appendDiv(joke["joke"], joke["category"], idx)
+        if (joke["joke-p1"]) {
+            appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
+        } else {
+            appendDiv(joke["joke"], joke["category"], idx)
+        }
     })
+    function deleteJoke(idx) {
+        jokes.splice(idx, 1)
+        render()
+    }
 }
 
 function appendDiv2 (category, setup, punchline, idx){
@@ -123,12 +131,12 @@ function appendDiv2 (category, setup, punchline, idx){
     container.appendChild(newDiv)
 }
 
-function render2() {
-    container.innerHTML = ""
-    jokes.forEach((joke, idx) => {
-        appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
-    })
-}
+// function render2() {
+//     container.innerHTML = ""
+//     jokes.forEach((joke, idx) => {
+//         appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
+//     })
+// }
 function deleteJoke(idx) {
     jokes.splice(idx, 1)
     render()
