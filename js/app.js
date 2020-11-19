@@ -1,4 +1,4 @@
-console.log(`sanity check`);
+// console.log(`sanity check`);
 
 /*-------------------------------- Constants --------------------------------*/
 const colorScheme = {
@@ -45,21 +45,50 @@ genBtn.addEventListener('click', () => {
         return response.json()
     })
     .then((data) => {
+        console.log(data)
         let newJoke = {}
-        newJoke['category'] = data.type
-        newJoke['joke-p1'] = data.setup
-        newJoke['joke-p2'] = data.punchline
+        newJoke['category'] = data[0].type
+        newJoke['joke-p1'] = data[0].setup
+        newJoke['joke-p2'] = data[0].punchline
         jokes.push(newJoke)
-        render()
+        render2()
     })
     .catch((err) => {
         console.log(err)
     })
 })
 
-progBtn
 
-lightDarkBtn.addEventListener('click', colorScheme.change)
+//[
+//     {
+//         "id": 184,
+//         "type": "general",
+//         "setup": "What did the fish say when it swam into a wall?",
+//         "punchline": "Damn!"
+//     }
+// ] 
+
+
+progBtn.addEventListener('click', () => {
+    fetch('https://official-joke-api.appspot.com/jokes/programming/random')
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data)
+        let newJoke = {}
+        newJoke['category'] = data[0].type
+        newJoke['joke-p1'] = data[0].setup
+        newJoke['joke-p2'] = data[0].punchline
+        jokes.push(newJoke)
+        render2()
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
+
+// lightDarkBtn.addEventListener('click', colorScheme.change)
 
 
 // This is where you should put the event listener
@@ -77,7 +106,7 @@ function appendDiv (joke, category, idx){
                                     <p>${joke}</p>
                                 </blockquote>
                             </div>
-                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>X</button>
+                            <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
                         `
     container.appendChild(newDiv)
@@ -111,7 +140,7 @@ function appendDiv2 (category, setup, punchline, idx){
 function render2() {
     container.innerHTML = ""
     jokes.forEach((joke, idx) => {
-        appendDiv(joke["setup"],joke["punchline"], joke["category"], idx)
+        appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
     })
 }
 function deleteJoke(idx) {
