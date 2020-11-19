@@ -12,6 +12,7 @@ const colorScheme = {
 
 const jokes = []
 
+
 /*------------------------ Cached Element References ------------------------*/
 const norrisBtn = document.getElementById('norrisBtn');
 const genBtn = document.getElementById('genBtn')
@@ -22,6 +23,7 @@ const body = document.getElementById('')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
+
 norrisBtn.addEventListener('click', () => {
     fetch('https://api.chucknorris.io/jokes/random')
     .then((response) => {
@@ -58,17 +60,6 @@ genBtn.addEventListener('click', () => {
     })
 })
 
-
-//[
-//     {
-//         "id": 184,
-//         "type": "general",
-//         "setup": "What did the fish say when it swam into a wall?",
-//         "punchline": "Damn!"
-//     }
-// ] 
-
-
 progBtn.addEventListener('click', () => {
     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
     .then((response) => {
@@ -88,11 +79,6 @@ progBtn.addEventListener('click', () => {
     })
 })
 
-// lightDarkBtn.addEventListener('click', colorScheme.change)
-
-
-// This is where you should put the event listener
-// for a mouse-click
 
 /*-------------------------------- Functions --------------------------------*/
 
