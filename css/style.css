@@ -18,8 +18,9 @@ font-size: 62.5%;
 body{
     background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
     width: 100%;
-    min-width: 255px;
+    min-width: 311px;
     height: 100vh;
+    font-family: cursive;
     justify-content: center;
     align-items: center;
     perspective: 1000px;
