@@ -12,6 +12,8 @@
 
 ![wireframe6](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
 
+![wireframe7](css/untitled.png)
+
 
 ## design layout
 
