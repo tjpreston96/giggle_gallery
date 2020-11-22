@@ -77,6 +77,12 @@ body{
     
 }
 
+buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .glow-on-hover {
     width: 30%;
     height: 50px;
@@ -153,6 +159,8 @@ h1{
     background: url(https://c7.uihere.com/files/103/226/345/free-vector-pink-abstract-sparkling-background.jpg);
 }
 
+
+
 @media screen and (max-width: 400px) {
     #buttonDiv{
         display: flex;
@@ -161,12 +169,12 @@ h1{
         align-items: center;
         justify-content: center;
     }
-    /* .glow-on-hover{
+    .glow-on-hover{
         display: flex;
         flex-direction: row;
         width: 70%;
         align-self: center;
         justify-content: center;
-
-    } */
+        align-items: center;
+    }
 }
