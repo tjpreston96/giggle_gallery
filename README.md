@@ -19,15 +19,9 @@
 - design layout
 - make 3 buttons (genBtn, norrisBtn, lightDark)
 - container for cards with button to remove --> appended to children
-
-## C.E.R for container and buttons 
-
-## event listeners
-
-## API call and console.log it 
-
-## put 'jokes' in card (store in variable)
-
-## function to handle appending card
-
-## style...style...style
+- C.E.R for container and buttons
+- event listeners
+- API calls and console.log them
+- put 'jokes' in card (store in variable
+- function to handle appending car
+- style...style...style
