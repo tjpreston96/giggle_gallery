@@ -31,6 +31,6 @@
 
 
 ### UPDATED WIREFRAME
-![wireframe7](css/untitled.png)
+![wireframe7](css/Giggle%20Gallery.png)
 
 ## ATTRIBUTIONS
