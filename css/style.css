@@ -61,13 +61,6 @@ body{
     justify-content: space-between;
 }
 
-
-#programming{
-    background: url(https://i.pinimg.com/originals/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-}
-
 .blockquote > p {
     font-size: 1.8rem;
     padding-left: 17px;
@@ -161,14 +154,19 @@ h1{
 }
 
 @media screen and (max-width: 400px) {
+    #buttonDiv{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
     .glow-on-hover{
-        display: block;
+        display: flex;
+        flex-direction: row;
         width: 70%;
         align-self: center;
         justify-content: center;
-    }
-    #buttonDiv{
-        align-items: center;
-        justify-content: center;
+
     }
 }
