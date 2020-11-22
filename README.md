@@ -34,3 +34,4 @@
 ![wireframe7](css/Giggle%20Gallery.png)
 
 ## ATTRIBUTIONS
+
