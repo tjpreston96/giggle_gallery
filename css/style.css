@@ -85,7 +85,7 @@ body{
     color: #fff;
     background: #111;
     cursor: pointer;
-    /* position: relative; */
+    position: relative;
     z-index: 0;
     border-radius: 10px;
     margin: 3px;
@@ -151,11 +151,6 @@ h1{
 
 #general{
     background: url(https://c7.uihere.com/files/103/226/345/free-vector-pink-abstract-sparkling-background.jpg);
-}
-
-#buttonDiv{
-    align-items: center;
-    
 }
 
 @media screen and (max-width: 400px) {
