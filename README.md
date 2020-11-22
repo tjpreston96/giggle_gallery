@@ -14,12 +14,11 @@
 
 ![wireframe7](css/untitled.png)
 
+## PSEUDOCODE
 
-## design layout
-
-## make 3 buttons (genBtn, norrisBtn, lightDark)
-
-## container for cards with button to remove --> appended to children
+- design layout
+- make 3 buttons (genBtn, norrisBtn, lightDark)
+- container for cards with button to remove --> appended to children
 
 ## C.E.R for container and buttons 
 
