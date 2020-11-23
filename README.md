@@ -14,6 +14,11 @@ url: http://giggle-gallery.surge.sh/
 - function to handle appending car
 - style...style...style
 
+## LANGUAGES USED 
+- HTML
+- JAVASCRIPT
+- CSS
+
 
 ## WIREFRAMING
 
