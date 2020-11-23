@@ -51,5 +51,5 @@ url: http://giggle-gallery.surge.sh/
 ## ATTRIBUTIONS
 
 I would like to sincerely thank the CSS Gods and the creators of these fantastic websites that made this project possible:
-CSS Buttons: https://webdeasy.de/en/top-css-buttons-en/
-CSS Background Animation: https://freefrontend.com/css-animated-backgrounds/
+- CSS Buttons: https://webdeasy.de/en/top-css-buttons-en/
+- CSS Background Animation: https://freefrontend.com/css-animated-backgrounds/
