@@ -44,7 +44,7 @@
 - reframing cards(picture frames)
 - redo background (gold tone || venetian)
 - make the h1 extend to the top of the page
-- replace black with darkgray for visibility/aesthetic
+- replace black with darkgray/old gold for visibility/aesthetic
 
 
 ## ATTRIBUTIONS

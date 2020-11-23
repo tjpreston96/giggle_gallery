@@ -1,13 +1,7 @@
 
 
 /*-------------------------------- Constants --------------------------------*/
-const colorScheme = {
-    dark: '',
-    change: function () {
-        colorScheme.dark = colorScheme.dark ? '' : 'dark';
-        body.setAttribute('class', colorScheme.dark)
-    },
-}
+
 /*---------------------------- Variables (state) ----------------------------*/
 
 const jokes = []
