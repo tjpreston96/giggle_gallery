@@ -1,4 +1,5 @@
-# UNIT-1-PROJECT
+# UNIT-1-PROJECT(API)
+
 
 ## PSEUDOCODE
 
@@ -12,13 +13,13 @@
 - function to handle appending car
 - style...style...style
 
+
 ## WIREFRAMING
 
 ### ORIGINAL CONCEPTS
 ![wireframe](css/455B875A-3F11-4F9E-94CA-392505011127_1_105_c.jpeg)
 
 ![wireframe2](css/90F40AF5-D120-450A-B40B-F99403820800_1_105_c.jpeg)
-
 
 ### POSTMAN TESTS FOR VALUES
 ![wireframe3](css/Screen%20Shot%202020-11-16%20at%203.37.09%20PM.png)
@@ -29,9 +30,20 @@
 
 ![wireframe6](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
 
-
 ### UPDATED WIREFRAME
 ![wireframe7](css/Giggle%20Gallery.png)
+
+### LIVE SCREENSHOTS
+![wireframe8](css/Live%20build%201.png)
+![wireframe9](css/Live%20build%202.png)
+
+
+## FUTURE ENHANCEMENTS
+
+- More responsiveness changes
+- reframing cards(picture frames)
+- redo background (gold tone || venetian)
+- 
 
 ## ATTRIBUTIONS
 

@@ -88,11 +88,11 @@ function appendDiv (joke, category, idx){
                         <div class="card h-100" id="${category.toLowerCase()}">
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
-                                    <header class='blockquote-header'>${category}</header>
-                                    <p>${joke}</p>
-                                    </blockquote>
-                                    </div>
-                                    <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
+                                <header class='blockquote-header'>${category}</header>
+                                <p>${joke}</p>
+                                </blockquote>
+                            </div>
+                            <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
                         `
     container.appendChild(newDiv)
