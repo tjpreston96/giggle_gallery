@@ -147,7 +147,7 @@ buttonDiv{
 
 h1{
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     background: cornsilk;
     width: 100%;
 }
@@ -162,7 +162,30 @@ h1{
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    #buttonDiv{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .glow-on-hover{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 340px) {
+    body{
+        font-family: ;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
     #buttonDiv{
         display: flex;
         flex-direction: column;
@@ -179,3 +202,4 @@ h1{
         align-items: center;
     }
 }
+
