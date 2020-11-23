@@ -1,4 +1,4 @@
-// console.log(`sanity check`);
+
 
 /*-------------------------------- Constants --------------------------------*/
 const colorScheme = {
@@ -131,12 +131,6 @@ function appendDiv2 (category, setup, punchline, idx){
     container.appendChild(newDiv)
 }
 
-// function render2() {
-//     container.innerHTML = ""
-//     jokes.forEach((joke, idx) => {
-//         appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
-//     })
-// }
 function deleteJoke(idx) {
     jokes.splice(idx, 1)
     render()
