@@ -77,10 +77,10 @@ body{
     
 }
 
-buttonDiv{
+#buttonDiv{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .glow-on-hover {
