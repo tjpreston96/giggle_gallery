@@ -163,6 +163,9 @@ h1{
 
 
 @media screen and (max-width: 500px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     #buttonDiv{
         display: flex;
         flex-direction: column;
@@ -177,14 +180,13 @@ h1{
         align-self: center;
         justify-content: center;
         align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.75rem;
     }
 }
 @media screen and (max-width: 340px) {
     body{
-        font-family: monospace;
-    }
-    h1{
-        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
     #buttonDiv{
         display: flex;
