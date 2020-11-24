@@ -17,7 +17,7 @@ font-size: 62.5%;
 
 body{
     background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
-    width: 100%;
+    width: 100vw;
     min-width: 311px;
     height: 100vh;
     font-family: Blippo, fantasy;
@@ -26,6 +26,7 @@ body{
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animation 100s linear infinite;
+    margin: 0;
 }
 
 @keyframes animation {
@@ -149,7 +150,7 @@ h1{
     text-align: center;
     font-size: 5rem;
     background: cornsilk;
-    width: 100%;
+    width: 100vw;
 }
 
 #programming{
@@ -189,7 +190,7 @@ h1{
         font-family: Arial, Helvetica, sans-serif;
     }
     h1{
-        font-size: 3.75rem;
+        font-size: 3rem;
     }
     #buttonDiv{
         display: flex;
