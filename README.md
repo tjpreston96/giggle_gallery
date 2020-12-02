@@ -1,4 +1,4 @@
-# UNIT-1-PROJECT(API)
+# Giggle Gallery
 url: http://giggle-gallery.surge.sh/
 
 
