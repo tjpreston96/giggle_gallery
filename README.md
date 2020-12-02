@@ -1,5 +1,5 @@
 # Giggle Gallery
-url: http://giggle-gallery.surge.sh/
+http://giggle-gallery.surge.sh/
 
 
 ## PSEUDOCODE
