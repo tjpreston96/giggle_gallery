@@ -1,84 +1,79 @@
-
-
 /*-------------------------------- Constants --------------------------------*/
 
 /*---------------------------- Variables (state) ----------------------------*/
 
-const jokes = []
-
+const jokes = [];
 
 /*------------------------ Cached Element References ------------------------*/
-const norrisBtn = document.getElementById('norrisBtn');
-const genBtn = document.getElementById('genBtn')
-const progBtn = document.getElementById('progBtn')
-const container = document.getElementById('containerDiv')
-const lightDarkBtn = document.getElementById('lightDarkButton')
-const body = document.getElementById('')
-
+const norrisBtn = document.getElementById("norrisBtn");
+const genBtn = document.getElementById("genBtn");
+const progBtn = document.getElementById("progBtn");
+const container = document.getElementById("containerDiv");
+const lightDarkBtn = document.getElementById("lightDarkButton");
+const body = document.getElementById("");
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-norrisBtn.addEventListener('click', () => {
-    fetch('https://api.chucknorris.io/jokes/random')
+norrisBtn.addEventListener("click", () => {
+  fetch("https://api.chucknorris.io/jokes/random")
     .then((response) => {
-        return response.json()
+      return response.json();
     })
     .then((data) => {
-        let newJoke = {}
-        newJoke['category'] = 'Norris'
-        newJoke['joke'] = data.value
-        jokes.push(newJoke)
-        render()
+      let newJoke = {};
+      newJoke["category"] = "Norris";
+      newJoke["joke"] = data.value;
+      jokes.push(newJoke);
+      render();
     })
     .catch((err) => {
-        console.log(err)
-    })
-})
+      console.log(err);
+    });
+});
 
-genBtn.addEventListener('click', () => {
-    fetch('https://official-joke-api.appspot.com/jokes/general/random')
+genBtn.addEventListener("click", () => {
+  fetch("https://official-joke-api.appspot.com/jokes/general/random")
     .then((response) => {
-        return response.json()
+      return response.json();
     })
     .then((data) => {
-        console.log(data)
-        let newJoke = {}
-        newJoke['category'] = data[0].type
-        newJoke['joke-p1'] = data[0].setup
-        newJoke['joke-p2'] = data[0].punchline
-        jokes.push(newJoke)
-        render()
+      console.log(data);
+      let newJoke = {};
+      newJoke["category"] = data[0].type;
+      newJoke["joke-p1"] = data[0].setup;
+      newJoke["joke-p2"] = data[0].punchline;
+      jokes.push(newJoke);
+      render();
     })
     .catch((err) => {
-        console.log(err)
-    })
-})
+      console.log(err);
+    });
+});
 
-progBtn.addEventListener('click', () => {
-    fetch('https://official-joke-api.appspot.com/jokes/programming/random')
+progBtn.addEventListener("click", () => {
+  fetch("https://official-joke-api.appspot.com/jokes/programming/random")
     .then((response) => {
-        return response.json()
+      return response.json();
     })
     .then((data) => {
-        console.log(data)
-        let newJoke = {}
-        newJoke['category'] = data[0].type
-        newJoke['joke-p1'] = data[0].setup
-        newJoke['joke-p2'] = data[0].punchline
-        jokes.push(newJoke)
-        render()
+      console.log(data);
+      let newJoke = {};
+      newJoke["category"] = data[0].type;
+      newJoke["joke-p1"] = data[0].setup;
+      newJoke["joke-p2"] = data[0].punchline;
+      jokes.push(newJoke);
+      render();
     })
     .catch((err) => {
-        console.log(err)
-    })
-})
-
+      console.log(err);
+    });
+});
 
 /*-------------------------------- Functions --------------------------------*/
 
-function appendDiv (joke, category, idx){
-    let newDiv = document.createElement('div')
-    newDiv.innerHTML = `
+function appendDiv(joke, category, idx) {
+  let newDiv = document.createElement("div");
+  newDiv.innerHTML = `
                         <div class="card h-100" id="${category.toLowerCase()}">
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
@@ -88,29 +83,28 @@ function appendDiv (joke, category, idx){
                             </div>
                             <button id ='delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
-                        `
-    container.appendChild(newDiv)
+                        `;
+  container.appendChild(newDiv);
 }
-
 
 function render() {
-    container.innerHTML = ""
-    jokes.forEach((joke, idx) => {
-        if (joke["joke-p1"]) {
-            appendDiv2(joke["category"],joke["joke-p1"],joke["joke-p2"], idx)
-        } else {
-            appendDiv(joke["joke"], joke["category"], idx)
-        }
-    })
-    function deleteJoke(idx) {
-        jokes.splice(idx, 1)
-        render()
+  container.innerHTML = "";
+  jokes.forEach((joke, idx) => {
+    if (joke["joke-p1"]) {
+      appendDiv2(joke["category"], joke["joke-p1"], joke["joke-p2"], idx);
+    } else {
+      appendDiv(joke["joke"], joke["category"], idx);
     }
+  });
+  function deleteJoke(idx) {
+    jokes.splice(idx, 1);
+    render();
+  }
 }
 
-function appendDiv2 (category, setup, punchline, idx){
-    let newDiv = document.createElement('div')
-    newDiv.innerHTML = `
+function appendDiv2(category, setup, punchline, idx) {
+  let newDiv = document.createElement("div");
+  newDiv.innerHTML = `
                         <div class="card h-100" id="${category.toLowerCase()}">
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
@@ -121,12 +115,11 @@ function appendDiv2 (category, setup, punchline, idx){
                             </div>
                             <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
-                        `
-    container.appendChild(newDiv)
+                        `;
+  container.appendChild(newDiv);
 }
 
 function deleteJoke(idx) {
-    jokes.splice(idx, 1)
-    render()
+  jokes.splice(idx, 1);
+  render();
 }
-
