@@ -1,5 +1,5 @@
-# UNIT-1-PROJECT(API)
-url: http://giggle-gallery.surge.sh/
+# Giggle Gallery
+http://giggle-gallery.surge.sh/
 
 
 ## PSEUDOCODE
