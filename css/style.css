@@ -24,14 +24,14 @@ body {
   font-family: Helvetica, sans-serif;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  animation: animation 100s linear infinite;
+  animation: animation 225s linear infinite;
 }
 
-/* @keyframes animation {
-    100% {
-      background-position: 0px -3000px;
-    }
-  } */
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
 
 h1 {
   color: #f0f0f0;
@@ -55,7 +55,7 @@ h1 {
 }
 
 .catBtn {
-  box-shadow: 0 0 5px 2px darkgray;
+  box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
   height: 4rem;
   font-size: 1.3rem;
   border-radius: 0.5rem;
@@ -68,7 +68,7 @@ h1 {
   font-size: 1.3rem;
   width: 100%;
   margin: 0;
-  box-shadow: 0 0 1px 1px darkgray;
+  box-shadow: 0 0 1px 1px rgb(146, 146, 146);
 }
 
 #containerDiv {
@@ -86,7 +86,7 @@ h1 {
   background-color: #f0f0f0;
   /* margin: 1.5rem; */
   width: 30rem;
-  box-shadow: 0 0 5px 2px darkgray;
+  box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
 }
 
 .card-body {
@@ -96,7 +96,7 @@ h1 {
 .card-header {
   font-size: 1.4rem;
   color: #f0f0f0;
-  box-shadow: 0 0 1px 1px darkgray;
+  box-shadow: 0 0 1px 1px rgb(146, 146, 146);
 }
 
 .general-header {

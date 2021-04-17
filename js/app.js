@@ -81,7 +81,7 @@ function appendDiv(joke, category, idx) {
                           </div>
                             <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}><i class="bi bi-trash"></i></button>     
                         </div>    
-                        `;
+                      `;
   container.appendChild(newDiv);
 }
 
