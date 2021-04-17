@@ -86,7 +86,7 @@ h1 {
 
 .card {
   background-color: #f0f0f0;
-  height: 20rem !important;
+  height: 20rem;
   width: 30rem;
   box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
 }
