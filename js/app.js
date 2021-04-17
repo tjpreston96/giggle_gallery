@@ -82,7 +82,7 @@ function appendDiv(joke, category, idx) {
                             <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}><i class="bi bi-trash"></i></button>     
                         </div>    
                       `;
-  container.appendChild(newDiv);
+  container.prepend(newDiv);
 }
 
 function render() {
@@ -111,7 +111,7 @@ function appendDiv2(category, setup, punchline, idx) {
                             <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}><i class="bi bi-trash"></i></button>
                         </div>    
                         `;
-  container.appendChild(newDiv);
+  container.prepend(newDiv);
 }
 
 function deleteJoke(idx) {

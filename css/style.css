@@ -29,7 +29,7 @@ body {
 
 @keyframes animation {
   100% {
-    background-position: 0px -3000px;
+    background-position: 0px 3000px;
   }
 }
 
@@ -37,7 +37,7 @@ h1 {
   color: #f0f0f0;
   font-weight: bolder;
   font-family: Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 2rem;
   text-align: center;
 }
@@ -84,13 +84,14 @@ h1 {
 
 .card {
   background-color: #f0f0f0;
-  /* margin: 1.5rem; */
+  height: 20rem !important;
   width: 30rem;
   box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
 }
 
 .card-body {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .card-header {
@@ -110,11 +111,6 @@ h1 {
 .Norris-header {
   background-color: #3d9681;
 }
-
-/* header{
-    background-color: #343a40;
-    width: 100%;
-  } */
 
 /* ---- MEDIA QUERIES ---- */
 
