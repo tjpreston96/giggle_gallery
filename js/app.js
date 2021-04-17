@@ -79,7 +79,7 @@ function appendDiv(joke, category, idx) {
                           <div class="card-body">
                             <p>${joke}</p>                              
                           </div>
-                            <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}>🗑</button>     
+                            <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}><i class="bi bi-trash"></i></button>     
                         </div>    
                         `;
   container.appendChild(newDiv);
@@ -108,7 +108,7 @@ function appendDiv2(category, setup, punchline, idx) {
                                     <p>${setup}</p>
                                     <p>${punchline}</p>
                             </div>
-                            <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}>X</button>
+                            <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}><i class="bi bi-trash"></i></button>
                         </div>    
                         `;
   container.appendChild(newDiv);
