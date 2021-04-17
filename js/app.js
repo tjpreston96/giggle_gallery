@@ -98,6 +98,7 @@ function render() {
 
 function appendDiv2(category, setup, punchline, idx) {
   let newDiv = document.createElement("div");
+
   newDiv.innerHTML = `
                         <div class="card h-100" id="${category.toLowerCase()}">
                         <div class='card-header ${category}-header'>${

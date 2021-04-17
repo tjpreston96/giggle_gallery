@@ -31,44 +31,71 @@ h1 {
 }
 
 .buttonDiv {
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
 .btn {
+  color: #f0f0f0;
   width: 30%;
   margin: 1rem;
 }
 
+.catBtn {
+  justify-content: center;
+}
+
 #delButton {
-  width: 40%;
+  width: 100%;
+  margin: 0;
 }
 
 #containerDiv {
-  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  width: 90%;
+}
+
+#containerDiv > div {
+  margin: 1rem;
 }
 
 .card {
+  background-color: #f0f0f0;
   margin: 1rem;
-  width: 75%;
+  width: 25rem;
   box-shadow: 0 0 5px 2px rgb(46, 49, 50);
+}
+
+#general {
+  margin-bottom: 2rem;
+}
+
+#Norris {
+  margin-bottom: 2rem;
+}
+
+#programming {
+  margin-bottom: 2rem;
 }
 
 .general-header {
   background-color: #6c648b;
-  color: snow;
+  color: #f0f0f0;
   box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .programming-header {
   background-color: #874c62;
-  color: snow;
+  color: #f0f0f0;
   box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .Norris-header {
   background-color: #3d9681;
-  color: snow;
+  color: #f0f0f0;
   box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
