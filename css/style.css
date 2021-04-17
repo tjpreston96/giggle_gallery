@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
@@ -43,10 +44,15 @@ h1 {
 }
 
 .catBtn {
+  height: 4rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
   justify-content: center;
+  align-items: center;
 }
 
 #delButton {
+  font-size: 1.5rem;
   width: 100%;
   margin: 0;
 }
@@ -60,42 +66,34 @@ h1 {
 }
 
 #containerDiv > div {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .card {
   background-color: #f0f0f0;
   margin: 1rem;
-  width: 25rem;
+  width: 30rem;
   box-shadow: 0 0 5px 2px rgb(46, 49, 50);
 }
 
-#general {
-  margin-bottom: 2rem;
+.card-body {
+  font-size: 1.3rem;
 }
 
-#Norris {
-  margin-bottom: 2rem;
-}
-
-#programming {
-  margin-bottom: 2rem;
+.card-header {
+  font-size: 1.4rem;
+  color: #f0f0f0;
+  box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .general-header {
   background-color: #6c648b;
-  color: #f0f0f0;
-  box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .programming-header {
   background-color: #874c62;
-  color: #f0f0f0;
-  box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .Norris-header {
   background-color: #3d9681;
-  color: #f0f0f0;
-  box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
