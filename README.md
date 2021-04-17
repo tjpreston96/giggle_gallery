@@ -28,22 +28,24 @@ http://giggle-gallery.surge.sh/
 ![wireframe2](css/90F40AF5-D120-450A-B40B-F99403820800_1_105_c.jpeg)
 
 ### POSTMAN TESTS FOR VALUES
-![wireframe3](css/Screen%20Shot%202020-11-16%20at%203.37.09%20PM.png)
+![postman1](css/Screen%20Shot%202020-11-16%20at%203.37.09%20PM.png)
 
-![wireframe4](css/Screen%20Shot%202020-11-16%20at%203.37.24%20PM.png)
+![postman2](css/Screen%20Shot%202020-11-16%20at%203.37.24%20PM.png)
 
-![wireframe5](css/Screen%20Shot%202020-11-16%20at%203.37.50%20PM.png)
+![postman3](css/Screen%20Shot%202020-11-16%20at%203.37.50%20PM.png)
 
-![wireframe6](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
+![postman4](css/Screen%20Shot%202020-11-16%20at%203.37.59%20PM.png)
 
 ### UPDATED WIREFRAME
-![wireframe7](css/Giggle%20Gallery.png)
+![wireframe3](css/Giggle%20Gallery.png)
 
 ### LIVE SCREENSHOTS
-![wireframe8](css/Live%20build%201.png)
-![wireframe9](css/Live%20build%202.png)
+![v1-pic1](css/Live%20build%201.png)
+![v1-pic2](css/Live%20build%202.png)
 
 ### V2 SCREENSHOTS
+![v2-pic1](css/Live%20build%201.png)
+![v2-pic2](css/Live%20build%202.png)
 
 
 
