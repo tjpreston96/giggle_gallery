@@ -43,6 +43,9 @@ http://giggle-gallery.surge.sh/
 ![wireframe8](css/Live%20build%201.png)
 ![wireframe9](css/Live%20build%202.png)
 
+### V2 SCREENSHOTS
+
+
 
 ## FUTURE ENHANCEMENTS
 
@@ -55,6 +58,4 @@ http://giggle-gallery.surge.sh/
 
 ## ATTRIBUTIONS
 
-I would like to sincerely thank the CSS Gods and the creators of these fantastic websites that made this project possible:
-- CSS Buttons: https://webdeasy.de/en/top-css-buttons-en/
 - CSS Background Animation: https://freefrontend.com/css-animated-backgrounds/
