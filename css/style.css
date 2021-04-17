@@ -57,8 +57,10 @@ h1 {
 .catBtn {
   box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
   height: 4rem;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: bold;
   border-radius: 0.5rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
