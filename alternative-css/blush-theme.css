@@ -17,29 +17,18 @@ html {
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  background: #b6a19e;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Helvetica, sans-serif;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-  animation: animation 100s linear infinite;
 }
 
-/* @keyframes animation {
-    100% {
-      background-position: 0px -3000px;
-    }
-  } */
-
 h1 {
-  color: #f0f0f0;
   font-weight: bolder;
   font-family: Helvetica, sans-serif;
   font-size: 4rem;
   margin: 2rem;
-  text-align: center;
 }
 
 .buttonDiv {
@@ -55,38 +44,36 @@ h1 {
 }
 
 .catBtn {
-  box-shadow: 0 0 5px 2px darkgray;
   height: 4rem;
   font-size: 1.3rem;
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 #delButton {
   font-size: 1.3rem;
   width: 100%;
   margin: 0;
-  box-shadow: 0 0 1px 1px darkgray;
 }
 
 #containerDiv {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
   justify-content: center;
   width: 90%;
 }
 
 #containerDiv > div {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .card {
   background-color: #f0f0f0;
-  /* margin: 1.5rem; */
+  margin: 1rem;
   width: 30rem;
-  box-shadow: 0 0 5px 2px darkgray;
+  box-shadow: 0 0 5px 2px rgb(46, 49, 50);
 }
 
 .card-body {
@@ -96,7 +83,7 @@ h1 {
 .card-header {
   font-size: 1.4rem;
   color: #f0f0f0;
-  box-shadow: 0 0 1px 1px darkgray;
+  box-shadow: 0 0 1px 1px rgb(46, 49, 50);
 }
 
 .general-header {
@@ -111,16 +98,17 @@ h1 {
   background-color: #3d9681;
 }
 
-/* header{
-    background-color: #343a40;
-    width: 100%;
-  } */
-
-/* ---- MEDIA QUERIES ---- */
-
 @media screen and (max-width: 430px) {
   .catBtn {
     font-size: 1rem;
+  }
+
+  .card-header {
+    font-size: 1.3rem;
+  }
+
+  .card-body {
+    font-size: 1.2rem;
   }
 }
 
