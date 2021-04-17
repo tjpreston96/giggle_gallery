@@ -51,17 +51,6 @@ h1 {
   align-items: center;
 }
 
-@media screen and (max-width: 430px) {
-  .catBtn {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 361px) {
-  .catBtn {
-    font-size: .9rem;
-  }
-}
 
 #delButton {
   font-size: 1.3rem;
@@ -108,4 +97,24 @@ h1 {
 
 .Norris-header {
   background-color: #3d9681;
+}
+
+@media screen and (max-width: 430px) {
+  .catBtn {
+    font-size: 1rem;
+  }
+
+  .card-header {
+    font-size: 1.3rem;
+  }
+
+  .card-body {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .catBtn {
+    font-size: .9rem;
+  }
 }
