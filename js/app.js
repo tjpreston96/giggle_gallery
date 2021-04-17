@@ -75,7 +75,7 @@ function appendDiv(joke, category, idx) {
   let newDiv = document.createElement("div");
   newDiv.innerHTML = `
                         <div class="card h-100" id="${category.toLowerCase()}">
-                          <header class='card-header'>${category}</header>
+                          <div class='card-header ${category}-header'>${category}</div>
                           <div class="card-body">
                             <p>${joke}</p>                              
                           </div>
@@ -94,24 +94,20 @@ function render() {
       appendDiv(joke["joke"], joke["category"], idx);
     }
   });
-  function deleteJoke(idx) {
-    jokes.splice(idx, 1);
-    render();
-  }
 }
 
 function appendDiv2(category, setup, punchline, idx) {
   let newDiv = document.createElement("div");
   newDiv.innerHTML = `
                         <div class="card h-100" id="${category.toLowerCase()}">
-                        <header class='card-header'>${
-                          category[0].toUpperCase() + category.slice(1)
-                        }</header>
+                        <div class='card-header ${category}-header'>${
+    category[0].toUpperCase() + category.slice(1)
+  }</div>
                             <div class="card-body">
                                     <p>${setup}</p>
                                     <p>${punchline}</p>
                             </div>
-                            <button id = 'delButton' class='btn' onClick={deleteJoke(${idx})}>🗑</button>
+                            <button id = 'delButton' class='btn btn-dark btn-lg' onClick={deleteJoke(${idx})}>🗑</button>
                         </div>    
                         `;
   container.appendChild(newDiv);
