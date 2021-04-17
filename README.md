@@ -23,7 +23,7 @@ http://giggle-gallery.surge.sh/
 ## WIREFRAMING
 
 ### ORIGINAL CONCEPTS
-![wireframe](css/455B875A-3F11-4F9E-94CA-392505011127_1_105_c.jpeg)
+![wireframe1](css/455B875A-3F11-4F9E-94CA-392505011127_1_105_c.jpeg)
 
 ![wireframe2](css/90F40AF5-D120-450A-B40B-F99403820800_1_105_c.jpeg)
 
@@ -44,8 +44,8 @@ http://giggle-gallery.surge.sh/
 ![v1-pic2](css/Live%20build%202.png)
 
 ### V2 SCREENSHOTS
-![v2-pic1](css/Live%20build%201.png)
-![v2-pic2](css/Live%20build%202.png)
+![v2-pic1](css/v2-pic1.png)
+![v2-pic2](css/v2-pic2.png)
 
 
 
