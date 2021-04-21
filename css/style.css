@@ -17,24 +17,15 @@ html {
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  background: #b6a19e;
+  color: #242529;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Helvetica, sans-serif;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-  animation: animation 225s linear infinite;
-}
-
-@keyframes animation {
-  100% {
-    background-position: 0px 3000px;
-  }
 }
 
 h1 {
-  color: #f0f0f0;
   font-weight: bolder;
   font-family: Helvetica, sans-serif;
   font-size: 5rem;
@@ -55,7 +46,7 @@ h1 {
 }
 
 .catBtn {
-  box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
+  box-shadow: 0 0 1px 2px #242529;
   height: 4rem;
   font-size: 1.35rem;
   font-weight: bold;
@@ -70,12 +61,13 @@ h1 {
   font-size: 1.3rem;
   width: 100%;
   margin: 0;
-  box-shadow: 0 0 1px 1px rgb(146, 146, 146);
+  box-shadow: 0 0 1px 2px #242529;
 }
 
 #containerDiv {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
   justify-content: center;
   width: 90%;
 }
@@ -88,7 +80,7 @@ h1 {
   background-color: #f0f0f0;
   height: 20rem;
   width: 30rem;
-  box-shadow: 0 0 5px 1.5px rgb(146, 146, 146);
+  box-shadow: 0 0 3px 2px #242529;
 }
 
 .card-body {
@@ -99,7 +91,7 @@ h1 {
 .card-header {
   font-size: 1.4rem;
   color: #f0f0f0;
-  box-shadow: 0 0 1px 1px rgb(146, 146, 146);
+  box-shadow: 0 0 1px 1.75px #242529;
 }
 
 .general-header {
@@ -125,5 +117,16 @@ h1 {
 @media screen and (max-width: 361px) {
   .catBtn {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .catBtn {
+    margin-bottom: 1rem;
   }
 }
