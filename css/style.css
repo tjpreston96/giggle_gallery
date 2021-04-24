@@ -78,20 +78,20 @@ h1 {
 
 .card {
   background-color: #f0f0f0;
-  height: 20rem;
+  height: 25rem;
   width: 30rem;
   box-shadow: 0 0 2px 1.5px #242529;
 }
 
 .card-body {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .card-header {
   font-size: 1.4rem;
   color: #f0f0f0;
-  box-shadow: 0 0 1px 1.75px #242529;
+  box-shadow: 0 0 1px 1.5px #242529;
 }
 
 .general-header {
