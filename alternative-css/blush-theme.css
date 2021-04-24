@@ -91,7 +91,7 @@ h1 {
 .card-header {
   font-size: 1.4rem;
   color: #f0f0f0;
-  box-shadow: 0 0 1px 1.75px #242529;
+  box-shadow: 0 0 1px 1.5px #242529;
 }
 
 .general-header {
@@ -130,4 +130,3 @@ h1 {
     margin-bottom: 1rem;
   }
 }
-
