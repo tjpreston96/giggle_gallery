@@ -44,8 +44,9 @@ http://giggle-gallery.surge.sh/
 ![v1-pic2](css/Live%20build%202.png)
 
 ### V2 SCREENSHOTS
-![v2-pic1](css/v2-pic1.png)
-![v2-pic2](css/v2-pic2.png)
+![v2-default](css/v2-default.png)
+![v2-desktop](css/v2-desktop.png)
+![v2-iphone](css/v2-iphone.png)
 
 
 
