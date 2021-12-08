@@ -36,11 +36,9 @@ genBtn.addEventListener("click", () => {
     method: "GET",
   })
     .then((response) => {
-      console.log(response);
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       let newJoke = {};
       newJoke["category"] = data[0].type;
       newJoke["joke-p1"] = data[0].setup;
@@ -54,12 +52,13 @@ genBtn.addEventListener("click", () => {
 });
 
 progBtn.addEventListener("click", () => {
-  fetch("https://karljoke.herokuapp.com/jokes/programming/random", { method: "GET" })
+  fetch("https://karljoke.herokuapp.com/jokes/programming/random", {
+    method: "GET",
+  })
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       let newJoke = {};
       newJoke["category"] = data[0].type;
       newJoke["joke-p1"] = data[0].setup;
