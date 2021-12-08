@@ -32,8 +32,11 @@ norrisBtn.addEventListener("click", () => {
 });
 
 genBtn.addEventListener("click", () => {
-  fetch("https://official-joke-api.appspot.com/jokes/general/random")
+  fetch("https://karljoke.herokuapp.com/jokes/general/random", {
+    method: "GET",
+  })
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .then((data) => {
@@ -51,7 +54,7 @@ genBtn.addEventListener("click", () => {
 });
 
 progBtn.addEventListener("click", () => {
-  fetch("https://official-joke-api.appspot.com/jokes/programming/random")
+  fetch("https://karljoke.herokuapp.com/jokes/programming/random", { method: "GET" })
     .then((response) => {
       return response.json();
     })
