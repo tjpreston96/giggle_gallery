@@ -1,5 +1,4 @@
-# Giggle Gallery
-http://giggle-gallery.surge.sh/
+# [Giggle Gallery](http://giggle-gallery.surge.sh/)
 
 
 ## PSEUDOCODE
@@ -62,3 +61,21 @@ http://giggle-gallery.surge.sh/
 ## ATTRIBUTIONS
 
 - CSS Background Animation: https://freefrontend.com/css-animated-backgrounds/
+- KarlJoke API: https://karljoke.herokuapp.com/
+
+## Versioning
+
+- v1.0.0 (Nov 23, 2020)
+  - `3938874` - `c690afd` Initial Launch
+- v1.0.1 (Dec 2, 2020)
+  - `6e4cfb4` & `7dca273` README updates 
+- v1.2.0 (Feb 15, 2021)
+  - `4451aea` & `d7d1824` Styling changes and README updates
+- v1.3.0 (Apr 17, 2021)
+  - `80c3fa4` - `b5f91d2` Styling changes and README updates
+- v1.4.0 (Apr 24, 2021)
+  - `537958b`, `70220e7`, & `894ef921` Styling changes
+- v1.4.1 (May 1, 2021)
+  - `d83f1e5` Added CSS images and README updates
+- v2.0.0 (Dec 7, 2021)
+  - `afe5691` Update API from Official-Joke-API to KarlJoke following permanent server shutdown
